@@ -7,27 +7,24 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController, UICollectionViewDataSource {
+class FeaturedViewController: UIViewController {
+    
+    let popularMovies = Movie.popularMovies()
+    let nowPlayingMovies = Movie.nowPlayingMovies()
+    let upcomingMovies = Movie.upcomingMovies()
     
     @IBOutlet var PopularCollectionView: UICollectionView!
     @IBOutlet var NowPlayingCollectionView: UICollectionView!
+    @IBOutlet var upcomingCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         PopularCollectionView.dataSource = self
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell
+        NowPlayingCollectionView.dataSource = self
+        upcomingCollectionView.dataSource = self
+        // garante que as collection views vao consultar as funcoes de collectionview da featured view controller
         
-        cell?.title.text = "Titulo do Filme"
-        cell?.poster.image = UIImage()
-        
-        return cell ?? UICollectionViewCell()
     }
 }

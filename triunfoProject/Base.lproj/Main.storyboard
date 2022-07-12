@@ -145,7 +145,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ouY-jl-i1k" customClass="NowPlayingCollectionViewCell" customModule="triunfoProject" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="nowPlayingCell" id="ouY-jl-i1k" customClass="NowPlayingCollectionViewCell" customModule="triunfoProject" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Z0b-NJ-pjs">
@@ -245,7 +245,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sDL-0W-SzM">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="upcomingCell" id="sDL-0W-SzM" customClass="UpcomingCollectionViewCell" customModule="triunfoProject" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g6V-ho-8e7">
@@ -288,6 +288,11 @@
                                                                         <constraint firstItem="r91-jB-Jp9" firstAttribute="top" secondItem="g6V-ho-8e7" secondAttribute="top" constant="8" id="wdJ-X0-A7R"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="cUG-mO-ydl" id="Som-KI-EJu"/>
+                                                                    <outlet property="image" destination="r91-jB-Jp9" id="xPd-4Z-wDb"/>
+                                                                    <outlet property="title" destination="Vye-lU-mU8" id="wpP-qS-tP2"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -327,6 +332,7 @@
                     <connections>
                         <outlet property="NowPlayingCollectionView" destination="zYG-Wm-M89" id="dgN-nP-o38"/>
                         <outlet property="PopularCollectionView" destination="opr-tR-zor" id="ALK-hH-uPH"/>
+                        <outlet property="upcomingCollectionView" destination="9uG-sZ-iBK" id="xxP-Dx-C8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
