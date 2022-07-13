@@ -19,6 +19,8 @@
 		D49EAC06287DF4E7009BC5AE /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EAC01287DF4E7009BC5AE /* Movie+Upcoming.swift */; };
 		D49EAC07287DF4E7009BC5AE /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EAC02287DF4E7009BC5AE /* Movie+TrendingToday.swift */; };
 		D49EAC09287E144A009BC5AE /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EAC08287E144A009BC5AE /* FeaturedViewController+UICollectionViewDataSource.swift */; };
+		D49EAC0B287F3F0D009BC5AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EAC0A287F3F0D009BC5AE /* DetailsViewController.swift */; };
+		D49EAC0D287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EAC0C287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift */; };
 		D4C31A4B287C9F4E00EACFF5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C31A4A287C9F4E00EACFF5 /* FeaturedViewController.swift */; };
 		D4F4B5B5287C98090015FE36 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B5B4287C98090015FE36 /* PopularCollectionViewCell.swift */; };
 		D4F4B5BB287C985F0015FE36 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B5BA287C985F0015FE36 /* NowPlayingCollectionViewCell.swift */; };
@@ -40,6 +42,8 @@
 		D49EAC01287DF4E7009BC5AE /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		D49EAC02287DF4E7009BC5AE /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		D49EAC08287E144A009BC5AE /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		D49EAC0A287F3F0D009BC5AE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D49EAC0C287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		D4C31A4A287C9F4E00EACFF5 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		D4F4B5B4287C98090015FE36 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		D4F4B5BA287C985F0015FE36 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			children = (
 				D4C31A4A287C9F4E00EACFF5 /* FeaturedViewController.swift */,
 				D49EAC08287E144A009BC5AE /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				D49EAC0A287F3F0D009BC5AE /* DetailsViewController.swift */,
+				D49EAC0C287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 				D49EAC04287DF4E7009BC5AE /* Movie+TrendingThisWeek.swift in Sources */,
 				D40D6F1128737E3800BAFA58 /* AppDelegate.swift in Sources */,
 				D4C31A4B287C9F4E00EACFF5 /* FeaturedViewController.swift in Sources */,
+				D49EAC0D287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
+				D49EAC0B287F3F0D009BC5AE /* DetailsViewController.swift in Sources */,
 				D49EABFD287DEE48009BC5AE /* Movie.swift in Sources */,
 				D40D6F1328737E3800BAFA58 /* SceneDelegate.swift in Sources */,
 			);

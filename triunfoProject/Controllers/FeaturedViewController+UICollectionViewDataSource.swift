@@ -21,36 +21,36 @@ extension FeaturedViewController: UICollectionViewDataSource {
     }
     
     fileprivate func createPopularCell(_ indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = PopularCollectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell {
+        if let cell = PopularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
             cell.title.text = popularMovies[indexPath.item].title
             cell.poster.image = UIImage(named: popularMovies[indexPath.item].backdrop)
             
             return cell
         }
-        return UICollectionViewCell()
+        return PopularCollectionViewCell()
     }
     
     fileprivate func createNowPlayingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = NowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: "nowPlayingCell", for: indexPath) as? NowPlayingCollectionViewCell {
             cell.title.text = nowPlayingMovies[indexPath.item].title
             cell.image.image = UIImage(named: nowPlayingMovies[indexPath.item].poster)
-            cell.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
+            cell.dateLabel.text = "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))"
             
             return cell
         }
-        return UICollectionViewCell()
+        return NowPlayingCollectionViewCell()
     }
     
     fileprivate func createUpcomingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier:"upcomingCell", for: indexPath) as? UpcomingCollectionViewCell {
             cell.title.text = upcomingMovies[indexPath.item].title
             cell.image.image = UIImage(named: upcomingMovies[indexPath.item].poster)
-            cell.dateLabel.text = upcomingMovies[indexPath.item].releaseDate
+            cell.dateLabel.text = "\(upcomingMovies[indexPath.item].releaseDate.prefix(4))"
             
             return cell
             
         }
-        return UICollectionViewCell()
+        return UpcomingCollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

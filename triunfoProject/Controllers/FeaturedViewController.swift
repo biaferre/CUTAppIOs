@@ -19,12 +19,23 @@ class FeaturedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // garantem que as collection views vao consultar as funcoes e dados de collectionview da featured view controller
         
         PopularCollectionView.dataSource = self
         NowPlayingCollectionView.dataSource = self
         upcomingCollectionView.dataSource = self
-        // garante que as collection views vao consultar as funcoes de collectionview da featured view controller
         
+        PopularCollectionView.delegate = self
+        NowPlayingCollectionView.delegate = self
+        upcomingCollectionView.delegate = self
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // passar info do filme pra proxima tela
+        if let destination = segue.destination as? DetailsViewController {
+            let movie = sender as? Movie
+            destination.movie = movie
+        }
     }
 }

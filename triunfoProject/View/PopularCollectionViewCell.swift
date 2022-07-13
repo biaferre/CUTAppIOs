@@ -9,6 +9,8 @@ import UIKit
 
 class PopularCollectionViewCell: UICollectionViewCell {
     
+    static let cellIdentifier = "popularCell"
+    
     @IBOutlet var poster: UIImageView!
     @IBOutlet var title: UILabel!
     
