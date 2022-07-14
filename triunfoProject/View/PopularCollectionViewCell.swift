@@ -14,4 +14,8 @@ class PopularCollectionViewCell: UICollectionViewCell {
     @IBOutlet var poster: UIImageView!
     @IBOutlet var title: UILabel!
     
+    func setup(titleParameter: String, imageParameter: UIImage) {
+        title.text = titleParameter
+        poster.image = imageParameter
+    }
 }
