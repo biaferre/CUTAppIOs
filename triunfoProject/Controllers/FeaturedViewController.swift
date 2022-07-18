@@ -9,9 +9,9 @@ import UIKit
 
 class FeaturedViewController: UIViewController {
     
-    let popularMovies = Movie.popularMovies()
-    let nowPlayingMovies = Movie.nowPlayingMovies()
-    let upcomingMovies = Movie.upcomingMovies()
+    var popularMovies: [Movie] = [] // Pega conteudo da API
+    var nowPlayingMovies = Movie.nowPlayingMovies()
+    var upcomingMovies: [Movie] = [] // = Movie.upcomingMovies()
     
     @IBOutlet var PopularCollectionView: UICollectionView!
     @IBOutlet var NowPlayingCollectionView: UICollectionView!
@@ -29,6 +29,18 @@ class FeaturedViewController: UIViewController {
         NowPlayingCollectionView.delegate = self
         upcomingCollectionView.delegate = self
         
+        Task { // tarefa assincrona feita de forma paralela a demais funcoes de loadar a tela
+            self.popularMovies = await Movie.popularMoviesAPI()
+            self.PopularCollectionView.reloadData()
+        }
+        Task {
+            self.nowPlayingMovies = await Movie.nowPlayingMoviesAPI()
+            self.NowPlayingCollectionView.reloadData()
+        }
+        Task {
+            self.upcomingMovies = await Movie.upcomingMoviesAPI()
+            self.upcomingCollectionView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,6 +48,7 @@ class FeaturedViewController: UIViewController {
         if let destination = segue.destination as? DetailsViewController {
             let movie = sender as? Movie
             destination.movie = movie
+            print(movie)
         }
     }
 }

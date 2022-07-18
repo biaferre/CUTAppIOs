@@ -94,7 +94,7 @@
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <connections>
-                                                                    <outlet property="poster" destination="xaM-yt-VOh" id="AY1-MQ-Nbc"/>
+                                                                    <outlet property="posterPath" destination="xaM-yt-VOh" id="Xbc-Et-DYV"/>
                                                                     <outlet property="title" destination="VNW-Bk-ljT" id="N6u-uz-DC1"/>
                                                                 </connections>
                                                             </collectionViewCell>

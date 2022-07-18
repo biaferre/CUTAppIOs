@@ -11,11 +11,11 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "popularCell"
     
-    @IBOutlet var poster: UIImageView!
+    @IBOutlet var posterPath: UIImageView!
     @IBOutlet var title: UILabel!
     
     func setup(titleParameter: String, imageParameter: UIImage) {
         title.text = titleParameter
-        poster.image = imageParameter
+        posterPath.image = imageParameter
     }
 }
