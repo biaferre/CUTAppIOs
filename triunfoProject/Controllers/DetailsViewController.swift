@@ -16,8 +16,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,5 +40,22 @@ class DetailsViewController: UIViewController {
         titleLabel.text = movie.title
         ratingLabel.text = "\(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+                posterImage.addGestureRecognizer(tapGR)
+                posterImage.isUserInteractionEnabled = true
     }
+    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+            if sender.state == .ended {
+                performSegue(withIdentifier: "posterSegue", sender: movie)
+            }
+        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            //abrir poster do filme
+            if let destination = segue.destination as? OfficialPosterViewController {
+                let movie = sender as? Movie
+                destination.movie = movie
+            }
+        }
 }
