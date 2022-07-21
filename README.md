@@ -8,7 +8,7 @@ Interface baseada no design feito por mim.
 Uso dos seguintes modelos/componentes de forma significativa:
 * Navegação;
 * MVC;
-* [API TMBD][https://developers.themoviedb.org] (versão 3);
+* [API TMBD](https://developers.themoviedb.org) (versão 3);
 * Auto-Layout;
 * Storyboard UI.
 
