@@ -35,6 +35,9 @@ Bia Férre
 
 * 0.1
     * Release inicial
+* 0.2
+    * Aprimoramento da UI
+    * Implementação da tela de See All
 
 ## Licença 🗓
 
