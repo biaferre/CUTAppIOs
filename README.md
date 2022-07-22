@@ -44,7 +44,7 @@ Todos os direitos reservados.
 
 Mentoria:
 * Alessandra Teixeira
-* Francisco 
+* Francisco Soares
 
 Inspiração, snippets de código:
 * [matheus-vb](https://github.com/matheus-vb/Movielogue)
