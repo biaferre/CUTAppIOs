@@ -50,5 +50,23 @@ class FeaturedViewController: UIViewController {
             destination.movie = movie
             print(movie)
         }
+        else if let destination = segue.destination as? SeeAllViewController {
+            
+             if segue.identifier == "popularSeeAll" {
+                destination.seeAllMovies = popularMovies
+                 destination.navigationItem.title = "All Popular movies"
+            }
+            else if segue.identifier == "nowPlayingSeeAll" {
+                destination.seeAllMovies = nowPlayingMovies
+                destination.navigationItem.title = "All Now Playing movies"
+                
+            }
+            else if segue.identifier == "upcomingSeeAll" {
+                destination.seeAllMovies = upcomingMovies
+                destination.navigationItem.title = "All Upcoming movies"
+                
+            }
+            
+        }
     }
 }

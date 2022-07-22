@@ -17,6 +17,10 @@
 		D40D6F1A28737E3A00BAFA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40D6F1928737E3A00BAFA58 /* Assets.xcassets */; };
 		D40D6F1D28737E3A00BAFA58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40D6F1B28737E3A00BAFA58 /* LaunchScreen.storyboard */; };
 		D43179E228878C7800F95B50 /* OfficialPosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43179E128878C7800F95B50 /* OfficialPosterViewController.swift */; };
+		D43179E42888C48B00F95B50 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43179E32888C48B00F95B50 /* SeeAllViewController.swift */; };
+		D43179E62888C61D00F95B50 /* SeeAllViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43179E52888C61D00F95B50 /* SeeAllViewController+DataSource.swift */; };
+		D43179E82888C71B00F95B50 /* SeeAllViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43179E72888C71B00F95B50 /* SeeAllViewController+Delegate.swift */; };
+		D43179EA2888CB6500F95B50 /* SeeAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43179E92888CB6500F95B50 /* SeeAllTableViewCell.swift */; };
 		D46EA55D2881E7E7008891AC /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46EA55C2881E7E7008891AC /* TMDB-Info.plist */; };
 		D49EABFD287DEE48009BC5AE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EABFC287DEE48009BC5AE /* Movie.swift */; };
 		D49EAC03287DF4E7009BC5AE /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EABFE287DF4E7009BC5AE /* Movie+NowPlaying.swift */; };
@@ -48,6 +52,10 @@
 		D40D6F1C28737E3A00BAFA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D40D6F1E28737E3A00BAFA58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D43179E128878C7800F95B50 /* OfficialPosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialPosterViewController.swift; sourceTree = "<group>"; };
+		D43179E32888C48B00F95B50 /* SeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
+		D43179E52888C61D00F95B50 /* SeeAllViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeeAllViewController+DataSource.swift"; sourceTree = "<group>"; };
+		D43179E72888C71B00F95B50 /* SeeAllViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeeAllViewController+Delegate.swift"; sourceTree = "<group>"; };
+		D43179E92888CB6500F95B50 /* SeeAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllTableViewCell.swift; sourceTree = "<group>"; };
 		D46EA55C2881E7E7008891AC /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 		D49EABFC287DEE48009BC5AE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D49EABFE287DF4E7009BC5AE /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
@@ -132,6 +140,9 @@
 				D405672F28874EDA00E89BD2 /* TrendingViewDelegate.swift */,
 				D405673128874F6F00E89BD2 /* TrendingViewController.swift */,
 				D43179E128878C7800F95B50 /* OfficialPosterViewController.swift */,
+				D43179E32888C48B00F95B50 /* SeeAllViewController.swift */,
+				D43179E52888C61D00F95B50 /* SeeAllViewController+DataSource.swift */,
+				D43179E72888C71B00F95B50 /* SeeAllViewController+Delegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 				D4F4B5BA287C985F0015FE36 /* NowPlayingCollectionViewCell.swift */,
 				D4F4B5B4287C98090015FE36 /* PopularCollectionViewCell.swift */,
 				D405672B28874C2B00E89BD2 /* TrendingTableViewCell.swift */,
+				D43179E92888CB6500F95B50 /* SeeAllTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,18 +255,22 @@
 				D49EAC03287DF4E7009BC5AE /* Movie+NowPlaying.swift in Sources */,
 				D43179E228878C7800F95B50 /* OfficialPosterViewController.swift in Sources */,
 				D49EAC05287DF4E7009BC5AE /* Movie+Popular.swift in Sources */,
+				D43179E82888C71B00F95B50 /* SeeAllViewController+Delegate.swift in Sources */,
 				D4F4B5BB287C985F0015FE36 /* NowPlayingCollectionViewCell.swift in Sources */,
 				D49EAC09287E144A009BC5AE /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
+				D43179E42888C48B00F95B50 /* SeeAllViewController.swift in Sources */,
 				D49EAC07287DF4E7009BC5AE /* Movie+TrendingToday.swift in Sources */,
 				D49EAC06287DF4E7009BC5AE /* Movie+Upcoming.swift in Sources */,
 				D4F4B5B5287C98090015FE36 /* PopularCollectionViewCell.swift in Sources */,
 				D49EAC04287DF4E7009BC5AE /* Movie+TrendingThisWeek.swift in Sources */,
+				D43179E62888C61D00F95B50 /* SeeAllViewController+DataSource.swift in Sources */,
 				D40D6F1128737E3800BAFA58 /* AppDelegate.swift in Sources */,
 				D405673028874EDA00E89BD2 /* TrendingViewDelegate.swift in Sources */,
 				D4C31A4B287C9F4E00EACFF5 /* FeaturedViewController.swift in Sources */,
 				D49EAC0D287F4817009BC5AE /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				D49EAC0B287F3F0D009BC5AE /* DetailsViewController.swift in Sources */,
 				D405673228874F6F00E89BD2 /* TrendingViewController.swift in Sources */,
+				D43179EA2888CB6500F95B50 /* SeeAllTableViewCell.swift in Sources */,
 				D4E3A0452885DE0E00299A0C /* MovieResponse.swift in Sources */,
 				D49EABFD287DEE48009BC5AE /* Movie.swift in Sources */,
 				D40D6F1328737E3800BAFA58 /* SceneDelegate.swift in Sources */,
@@ -410,6 +426,7 @@
 				DEVELOPMENT_TEAM = Y8H4LWMZZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = triunfoProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cut!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -438,6 +455,7 @@
 				DEVELOPMENT_TEAM = Y8H4LWMZZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = triunfoProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cut!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
